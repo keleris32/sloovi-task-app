@@ -1,0 +1,6 @@
+.container {
+    flex: 0.15;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--primary);
+}

@@ -1,0 +1,14 @@
+.container {
+    flex: 0.85;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.header {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
