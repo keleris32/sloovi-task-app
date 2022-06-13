@@ -1,0 +1,28 @@
+.container {
+    width: 400px;
+    margin: 7rem 3rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .25em;
+    border: 1px solid lightgray;
+    background-color: var(--light-grey);
+}
+
+.headerTitle {
+    padding: 0 .5em;
+}
+
+.headerTitle > span:last-child {
+    padding: 0 .5em;
+    color: gray;
+} 
+
+.headerIcon {
+    padding: .5em .5em;
+    border-left: 1px solid lightgray;
+}
