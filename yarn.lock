@@ -7382,11 +7382,6 @@ react-loader-spinner@^5.1.5:
   resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-5.1.5.tgz#392ecc2c964363cde0572b8aaa41c29ebbe372ad"
   integrity sha512-kHSBa3pNPNzd3UGOiOsHCC33qx5bZA7IHKau+YSTVn36Jib4eBVx/TNMggudbzW5CTnRCbP5bnYU4ACAX3mA6g==
 
-react-loading-skeleton@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-loading-skeleton/-/react-loading-skeleton-3.1.0.tgz#ce22942f1af77bfd60854417075792367f54f41e"
-  integrity sha512-j1U1CWWs68nBPOg7tkQqnlFcAMFF6oEK6MgqAo15f8A5p7mjH6xyKn2gHbkcimpwfO0VQXqxAswnSYVr8lWzjw==
-
 react-onclickoutside@^6.12.0:
   version "6.12.2"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.12.2.tgz#8e6cf80c7d17a79f2c908399918158a7b02dda01"
