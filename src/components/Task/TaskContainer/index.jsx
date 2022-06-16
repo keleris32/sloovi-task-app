@@ -145,7 +145,6 @@ function TaskContainer({
             <DatePicker
               selected={startDate}
               onChange={(date) => setStartDate(date)}
-              // dateFormat="YYYY-MM-DD"
             />
           </div>
           <div className={styles.dateTimeContainer}>
@@ -170,7 +169,12 @@ function TaskContainer({
           />
         </div>
       </form>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: isToBeUpdated ? 'space-between' : 'flex-end',
+        }}
+      >
         {isToBeUpdated && (
           <div
             onClick={deleteSelectedTask}

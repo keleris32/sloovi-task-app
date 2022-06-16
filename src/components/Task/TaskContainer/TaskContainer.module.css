@@ -19,7 +19,6 @@
 .form > div {
     display: flex;
     margin: .25em 0;
-    /* gap: .25em; */
 }
 
 .wrapper {
