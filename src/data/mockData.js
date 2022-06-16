@@ -1,13 +1,5 @@
 export const TIME_DATA = [
   {
-    label: '00:00am',
-    value: 0,
-  },
-  {
-    label: '00:30am',
-    value: 1800,
-  },
-  {
     label: '01:00am',
     value: 3600,
   },
@@ -66,5 +58,13 @@ export const TIME_DATA = [
   {
     label: '8:00am',
     value: 28800,
+  },
+  {
+    label: '8:30am',
+    value: 30600,
+  },
+  {
+    label: '9:00am',
+    value: 32400,
   },
 ];
