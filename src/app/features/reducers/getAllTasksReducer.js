@@ -1,27 +1,27 @@
-import { actionType } from '../../../constants/actionTypes';
+import { allTasksActionType } from '../../../constants/actionTypes';
 
 const initialState = {
-  data: null,
+  data: [],
   loading: false,
-  error: null,
+  error: false,
 };
 
-function authReducer(state = initialState, action) {
+function getAllTasksReducer(state = initialState, action) {
   switch (action.type) {
-    case actionType.loading:
+    case allTasksActionType.loading:
       return {
         ...state,
         loading: true,
       };
 
-    case actionType.success:
+    case allTasksActionType.success:
       return {
         ...state,
         loading: false,
         data: action.payload,
       };
 
-    case actionType.error:
+    case allTasksActionType.error:
       return {
         ...state,
         loading: false,
@@ -33,4 +33,4 @@ function authReducer(state = initialState, action) {
   }
 }
 
-export default authReducer;
+export default getAllTasksReducer;

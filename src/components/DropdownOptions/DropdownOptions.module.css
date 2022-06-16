@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  font-size: 0.9em;
+  width: 100%;
+  margin: 0;
+}
+
+.header,
+.item {
+  padding: 0.125em .25em;
+  margin: 0;
+  cursor: pointer;
+}
+
+.header > span {
+  margin-left: .5em;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: .125em;
+  background-color: #fff;
+}
+
+.body {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  z-index: 999;
+}
+
+.fixedBody {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  z-index: 999;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.item:hover {
+  background-color: #273285;
+  color: #fff;
+}

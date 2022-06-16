@@ -1,6 +1,6 @@
 import { axiosPrivate } from '../api/axios';
 import { useEffect } from 'react';
-import useSelector from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const useAxiosPrivate = () => {
   const { data } = useSelector((state) => state.auth);

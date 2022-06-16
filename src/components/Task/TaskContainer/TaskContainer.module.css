@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em .75em;
+    background-color: var(--secondary);
+    border: 1px solid lightgray;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form > label {
+    margin-bottom: .25em;
+}
+
+.form > div {
+    display: flex;
+    margin: .25em 0;
+    /* gap: .25em; */
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.dateTimeContainer {
+    flex: 1;
+    margin: .5em 0;
+}
+
+.buttonContainer {
+   align-self: flex-end;
+}
+
+.buttonContainer > button {
+    padding: .5em 1.25em;
+    border: none;
+}
+
+.buttonContainer > button:first-child {
+    background: transparent;
+}
+
+.buttonContainer > button:last-child {
+    color: #fff;
+    background-color: var(--todo-form-btn-bg);
+    border-radius: .25em;
+}

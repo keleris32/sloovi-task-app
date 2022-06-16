@@ -1,10 +1,10 @@
-import { authActionType } from '../../../constants/actionTypes';
+import { actionType } from '../../../constants/actionTypes';
 import axios from '../../../api/axios';
 
 export function loginUser(formData, toggleErrorAlert, navigateBackToHomeRoute) {
   return async (dispatch) => {
     dispatch({
-      type: authActionType.loading,
+      type: actionType.loading,
     });
 
     try {
@@ -12,22 +12,26 @@ export function loginUser(formData, toggleErrorAlert, navigateBackToHomeRoute) {
 
       if (response.data?.status === 'success') {
         dispatch({
-          type: authActionType.success,
+          type: actionType.success,
           payload: response.data?.results,
         });
+
+        console.log('Success!!!!');
 
         navigateBackToHomeRoute();
       } else {
         dispatch({
-          type: authActionType.error,
+          type: actionType.error,
           payload: response.data?.message,
         });
+
+        console.log(response.data?.message);
 
         toggleErrorAlert();
       }
     } catch (error) {
       dispatch({
-        type: authActionType.error,
+        type: actionType.error,
         payload: error.response && error.response.data?.message,
       });
     }

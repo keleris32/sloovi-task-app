@@ -16,7 +16,7 @@ function App() {
         closeOnClick
         pauseOnHover
       />
-      <AppRoutes />;
+      <AppRoutes />
     </>
   );
 }

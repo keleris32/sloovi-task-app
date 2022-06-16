@@ -16,7 +16,10 @@ function Login() {
   const dispatch = useDispatch();
 
   // Get url path where user was redirected from
-  const from = location.state?.from?.pathname || '/';
+  const from =
+    location.state?.from?.pathname === '/login'
+      ? '/'
+      : location.state?.from?.pathname;
 
   const [isErrorAlertActive, setIsErrorAlertActive] = useState(false);
 

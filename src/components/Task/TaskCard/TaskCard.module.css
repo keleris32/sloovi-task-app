@@ -1,0 +1,45 @@
+.container {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75em .75em;
+    border-radius: .25em;
+    border: 1px solid lightgray;
+    background-color: #fff;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+.imgIcon > img {
+    height: 40px;
+    width: 40px;
+    margin-right: 1em;
+}
+
+.detailsCon {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsCon > h3 {
+    margin: 0;
+}
+
+.detailsCon > span:last-child {
+    color: red;
+}
+
+.editIcon {
+    padding: .5em;
+    border: 1px solid lightgray;
+    border-radius: .25em;
+}
+
+
+
+
+

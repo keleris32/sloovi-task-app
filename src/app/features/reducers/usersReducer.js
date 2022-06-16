@@ -1,27 +1,27 @@
-import { actionType } from '../../../constants/actionTypes';
+import { usersActionType } from '../../../constants/actionTypes';
 
 const initialState = {
-  data: null,
+  data: [],
   loading: false,
-  error: null,
+  error: false,
 };
 
-function authReducer(state = initialState, action) {
+function getUsersReducer(state = initialState, action) {
   switch (action.type) {
-    case actionType.loading:
+    case usersActionType.loading:
       return {
         ...state,
         loading: true,
       };
 
-    case actionType.success:
+    case usersActionType.success:
       return {
         ...state,
         loading: false,
         data: action.payload,
       };
 
-    case actionType.error:
+    case usersActionType.error:
       return {
         ...state,
         loading: false,
@@ -33,4 +33,4 @@ function authReducer(state = initialState, action) {
   }
 }
 
-export default authReducer;
+export default getUsersReducer;
