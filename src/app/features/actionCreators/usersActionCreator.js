@@ -7,8 +7,6 @@ export function getAllUsers(axiosPrivate, company_id, toggleErrorAlert) {
       type: usersActionType.loading,
     });
 
-    console.log('all users');
-
     try {
       const response = await axiosPrivate.get(
         `/team?product=${PRODUCT}&company_id=${company_id}`
@@ -19,13 +17,11 @@ export function getAllUsers(axiosPrivate, company_id, toggleErrorAlert) {
           type: usersActionType.success,
           payload: response.data?.results,
         });
-        console.log('Fetched users! successfully!');
       } else {
         dispatch({
           type: usersActionType.error,
           payload: response.data?.message,
         });
-        console.log('failed to fetch users', response.data?.message);
         toggleErrorAlert();
       }
     } catch (error) {
